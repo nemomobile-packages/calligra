@@ -1246,7 +1246,7 @@ Requires: libkok-devel
 
 
 %prep
-%setup -q -c -n %{name}-%{version}/calligra
+%setup -q -n %{name}-%{version}/calligra
 
 %build
 mkdir -p build && cd build
