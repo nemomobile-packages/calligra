@@ -8,7 +8,6 @@ Version: 2.7.8+afae6db
 Release: 1%{?dist}
 Group: Applications/Productivity
 Source0: %{name}-%{version}.tar.gz
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Summary: Calligra Suite
 License: Open
 BuildRequires: cmake
@@ -1252,6 +1251,7 @@ Requires: libkok-devel
 %build
 mkdir -p build && cd build
 find ..
+pwd
 cmake \
     -DPRODUCTSET=Libraries \
     -DKDE4_BUILD_TESTS=OFF \
